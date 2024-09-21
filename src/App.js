@@ -68,7 +68,7 @@ const RegisterCustomer = () => {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/add", data, {
+      await axios.post("https://kwaserver.vercel.app/add", data, {
         headers: {
           "Content-Type": "multipart/form-data", // Ensure correct headers
         },
