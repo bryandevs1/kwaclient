@@ -93,7 +93,7 @@ const RegisterCustomer = () => {
 
   return (
     <div>
-      <h1>Register New Church Member</h1>
+      <h1>Register As a New Church Member</h1>
       <form onSubmit={handleSubmit} encType="multipart/form-data">
         {error && <p style={{ color: "red" }}>{error}</p>}
 
@@ -119,6 +119,8 @@ const RegisterCustomer = () => {
 
         <label htmlFor="details">Member or Visitor:</label>
         <input
+          type="text"
+          placeholder="Simply Say I am a visitor or Member"
           id="details"
           name="details"
           value={formData.details}
